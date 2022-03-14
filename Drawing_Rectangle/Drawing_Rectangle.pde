@@ -1,3 +1,21 @@
+//Global Variables
+//
+void setup()
+{
+}//End setup
+//
+void draw() 
+{
+}//End draw
+//
+void keyPressed() 
+{
+}//End keyPressed
+//
+void mousePressed() 
+{
+}//End mousePressed
+//
 
 //size(400, 600); //Display Geometry (Orientation): Square size(300, 300), Landscape(600, 400), Portrait(400, 600)
 fullScreen(); //displayWidth, displayHeight
