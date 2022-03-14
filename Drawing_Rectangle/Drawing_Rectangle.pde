@@ -6,7 +6,7 @@ int x = width*1/4, y = height*1/4, rectWidth = width*1/2, rectHeight = height*1/
 // int x = width*1/2, y = height*1/2, rectWidth = width*1/2, rectHeight = height*1/2;
 int strokeReset=1;
 int thin=width*1/40, thick=3*thin;
-color yellow, purple, whiteReset, blackReset;
+color yellow=#F1FF39, purple=#E730FC, whiteReset=#FFFFFF, blackReset=#000000;
 //Background as gray scale, 0-255 (notice 256#'s) (0 counts as a number)
 background(150);
 // New background function "covers" old gray scale background()
@@ -17,7 +17,7 @@ stroke(yellow);
 fill(purple);
 rect(x, y, rectWidth, rectHeight);
 // rest to defaults
-fill(whiteReset)
+fill(whiteReset);
 stroke(blackReset);
 strokeWeight(strokeReset);
 //End of Program
