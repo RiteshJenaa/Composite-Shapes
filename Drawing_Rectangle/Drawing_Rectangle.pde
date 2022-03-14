@@ -1,3 +1,4 @@
+
 //size(400, 600); //Display Geometry (Orientation): Square size(300, 300), Landscape(600, 400), Portrait(400, 600)
 fullScreen(); //displayWidth, displayHeight
 println("Canvas Size", width, height);
@@ -9,31 +10,35 @@ int strokeReset=1;
 int thin=width*1/40, thick=3*thin;
 color strokeColour, fillColour;
 color yellow=#F1FF39, purple=#E730FC, whiteReset=#FFFFFF, blackReset=#000000;
-// COlour design must limit blue as much as possible (notice purple colour)
+// Colour design must limit blue as much as possible (notice purple colour)
 color yellowNightMode=#F4FE00, purpleNightMode=#B4008C; //No blue light for the colour shade
-//Background as gray scale, 0-255 (notice 256#'s) (0 counts as a number)
+Boolean nightMode=false; //Daytime is false
+
+// Background as gray scale, 0-255 (notice 256 #'s)
 background(150);
-// New background function "covers" old gray scale background()
-// Background colour as RGB, random(a,b)
+// New Background Function "covers" old gray scale background()
+// Background as colour, RGB, random(a,b)
 // Night Mode means background cannot have blue // change random for night mode
-if ( nightMode==true) //Night Mode choices
+
+if ( nightMode==true ) //Night Mode Choices
 {
-  backgroundBlue=0;
-  strokeColour =; 
-  fillColour = ;
-} else 
+  backgroundBlue = 0;
+  strokeColour = yellowNightMode;
+  fillColour = purpleNightMode;
+} else
 {
-  backgroundBlue = int(  random(255)  );
+  backgroundBlue = int( random(255) );
+  strokeColour = yellow;
+  fillColour = purple;
   println("here", backgroundBlue);
 } //End Night Mode
-background(color(random(0, 255), random(255), random(255), backgroundBlue) );
+
+background( color(random(0, 255), random(255), backgroundBlue) );
 strokeWeight(thick);
-//stroke(yellow); //YellowNightMode
-//fill(purple); //PurpleNightMode
-stroke(strokeColour)
-fill(PurpleNightMode)
+stroke(strokeColour);
+fill(fillColour);
 rect(x, y, rectWidth, rectHeight);
-// rest to defaults
+// Rest to defaults
 fill(whiteReset);
 stroke(blackReset);
 strokeWeight(strokeReset);
