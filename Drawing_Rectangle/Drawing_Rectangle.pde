@@ -9,4 +9,12 @@ background(150);
 // New background function "covers" old gray scale background()
 // Background colour as RGB, random(a,b)
 background(color(random(0,255), random(255), random(255)) );
+strokeWeight(thick);
+stroke(yellow);
+fill(purpule);
 rect(x, y, rectWidth, rectHeight);
+// rest to defaults
+fill(whiteReset)
+stroke(blackReset);
+strokeWeight(strokeReset);
+//End of Program
