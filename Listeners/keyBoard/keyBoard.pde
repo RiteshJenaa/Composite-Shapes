@@ -1,6 +1,7 @@
 //Global Variables
 Boolean nightMode=false;
 //
+
 void setup() 
 {
   //size(600, 400);

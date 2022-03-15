@@ -6,6 +6,7 @@ int strokeReset=1;
 int thin, thick;
 color strokeColour, fillColour;
 color yellow=#F1FF39, purple=#E730FC, whiteReset=#FFFFFF, blackReset=#000000;
+
 // Colour design must limit blue as much as possible (notice the purple colour)
 color yellowNightMode=#F4FE00, purpleNightMode=#B4008C; //No blue light for the colour shade
 Boolean nightMode=false; //Daytime is false
@@ -16,6 +17,7 @@ void setup()
   //size(400, 600); //Display Geometry (Orientation): Square size(300, 300), Landscape(600, 400), Portrait(400, 600)
   fullScreen(); //displayWidth, displayHeight
   println("Canvas Size", width, height);
+  
   //Population
   x = width*1/4;
   y = height*1/4;
@@ -34,7 +36,6 @@ void draw()
   // New Background Function "covers" old gray scale background()
   // Background as colour, RGB, random(a,b)
   // Night Mode means background cannot have blue // change random for night mode
-
 
   if ( nightMode==true ) //Night Mode Choices
   {
