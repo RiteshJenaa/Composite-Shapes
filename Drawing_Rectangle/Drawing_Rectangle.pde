@@ -3,7 +3,7 @@
 int x = width*1/4, y = height*1/4, rectWidth = width*1/2, rectHeight = height*1/2;
 int backgroundBlue=0;
 int strokeReset=1;
-int thin=width*1/40, thick=3*thin;
+int thin, thick;
 color strokeColour, fillColour;
 color yellow=#F1FF39, purple=#E730FC, whiteReset=#FFFFFF, blackReset=#000000;
 // Colour design must limit blue as much as possible (notice the purple colour)
@@ -17,8 +17,14 @@ void setup()
   fullScreen(); //displayWidth, displayHeight
   println("Canvas Size", width, height);
   //Population
-  //x = width*1/2, y = height*1/2, rectWidth = width*1/2, rectHeight = height*1/2;
+  x = width*1/4;
+  y = height*1/4;
+  rectWidth = width*1/2; 
+  rectHeight = height*1/2;
+  thin = width*1/40;
+  thick = 3*thin;
   println("Display", "width", displayWidth, "height", displayHeight);
+
 }//End setup
 //
 
