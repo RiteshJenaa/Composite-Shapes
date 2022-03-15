@@ -1,4 +1,13 @@
 //Global Variables
+int x = width*1/4, y = height*1/4, rectWidth = width*1/2, rectHeight = height*1/2;
+int backgroundBlue=0;
+int strokeReset=1;
+int thin=width*1/40, thick=3*thin;
+color strokeColour, fillColour;
+color yellow=#F1FF39, purple=#E730FC, whiteReset=#FFFFFF, blackReset=#000000;
+// Colour design must limit blue as much as possible (notice purple colour)
+color yellowNightMode=#F4FE00, purpleNightMode=#B4008C; //No blue light for the colour shade
+Boolean nightMode=false; //Daytime is false
 //
 void setup()
 {
@@ -18,19 +27,10 @@ void mousePressed()
 //
 
 //size(400, 600); //Display Geometry (Orientation): Square size(300, 300), Landscape(600, 400), Portrait(400, 600)
-fullScreen(); //displayWidth, displayHeight
-println("Canvas Size", width, height);
+//fullScreen(); //displayWidth, displayHeight
+//println("Canvas Size", width, height);
 // int x = width*1/2, y = height*1/2, rectWidth = width*1/2, rectHeight = height*1/2;
-println("Display", "width", displayWidth, "height", displayHeight);
-int x = width*1/4, y = height*1/4, rectWidth = width*1/2, rectHeight = height*1/2;
-int backgroundBlue=0;
-int strokeReset=1;
-int thin=width*1/40, thick=3*thin;
-color strokeColour, fillColour;
-color yellow=#F1FF39, purple=#E730FC, whiteReset=#FFFFFF, blackReset=#000000;
-// Colour design must limit blue as much as possible (notice purple colour)
-color yellowNightMode=#F4FE00, purpleNightMode=#B4008C; //No blue light for the colour shade
-Boolean nightMode=false; //Daytime is false
+//println("Display", "width", displayWidth, "height", displayHeight);
 
 
 // Background as gray scale, 0-255 (notice 256 #'s)
