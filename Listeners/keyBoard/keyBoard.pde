@@ -10,7 +10,7 @@ void setup()
 void draw()
 {
   if (nightMode == true) println("I am nocturnal");
-  if (nightMode == false) println("");
+  if (nightMode == false) println("n");
 }//End draw
 //
 void keyPressed()
