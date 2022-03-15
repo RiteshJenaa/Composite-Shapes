@@ -13,9 +13,7 @@ void draw()
   if (nightMode == false) println("");
 }//End draw
 //
-void keyPressed()
-{
-}//End keyPressed
+void keyPressed() {}//End keyPressed
 //
 void mousePressed()
 {
