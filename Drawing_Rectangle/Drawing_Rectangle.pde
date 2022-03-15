@@ -13,8 +13,8 @@ Boolean nightMode=false; //Daytime is false
 
 void setup()
 {
-  //size(400, 600); //Display Geometry (Orientation): Square size(300, 300), Landscape(600, 400), Portrait(400, 600)
-  fullScreen(); //displayWidth, displayHeight
+  size(400, 600); //Display Geometry (Orientation): Square size(300, 300), Landscape(600, 400), Portrait(400, 600)
+  //fullScreen(); //displayWidth, displayHeight
   println("Canvas Size", width, height);
   //Population
   x = width*1/4;
@@ -24,7 +24,6 @@ void setup()
   thin = width*1/45;
   thick = 3*thin;
   println("Display", "width", displayWidth, "height", displayHeight);
-
 }//End setup
 //
 
@@ -42,12 +41,13 @@ void draw()
     backgroundBlue = 0;
     strokeColour = yellowNightMode;
     fillColour = purpleNightMode;
+    println("Night mode is currently working.");
   } else
   {
     backgroundBlue = int( random(255) );
     strokeColour = yellow;
     fillColour = purple;
-    println("here", backgroundBlue);
+    println("Night mode is turned off.");
   } //End Night Mode
 
   //
@@ -69,20 +69,21 @@ void draw()
 
 void keyPressed() 
 {
-  
+  if ( key == 'N' || key == 'n' ) nightMode = true;
+  if ( key == CODED && keyCode == LEFT) nightMode = false;
 }//End keyPressed
-
 //
 
 void mousePressed() 
 {
-  
+  if (nightMode == true) println("I am nocturnal");
+  if (nightMode == false) println("");
 }//End mousePressed
 
 //
 
 /*
 
-//End of Program
-
-*/
+ //End of Program
+ 
+ */
