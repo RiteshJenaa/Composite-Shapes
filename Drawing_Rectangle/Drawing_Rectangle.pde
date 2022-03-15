@@ -21,7 +21,7 @@ void setup()
   y = height*1/4;
   rectWidth = width*1/2; 
   rectHeight = height*1/2;
-  thin = width*1/40;
+  thin = width*1/45;
   thick = 3*thin;
   println("Display", "width", displayWidth, "height", displayHeight);
 
