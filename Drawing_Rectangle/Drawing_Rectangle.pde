@@ -13,8 +13,8 @@ Boolean nightMode=false; //Daytime is false
 
 void setup()
 {
-  size(400, 600); //Display Geometry (Orientation): Square size(300, 300), Landscape(600, 400), Portrait(400, 600)
-  //fullScreen(); //displayWidth, displayHeight
+  //size(400, 600); //Display Geometry (Orientation): Square size(300, 300), Landscape(600, 400), Portrait(400, 600)
+  fullScreen(); //displayWidth, displayHeight
   println("Canvas Size", width, height);
   //Population
   x = width*1/4;
